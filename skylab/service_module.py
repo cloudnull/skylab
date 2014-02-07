@@ -377,7 +377,7 @@ def construct_skylab(args):
 
     replacement_dict = {
         'chef_server_ip': controller1_addr,
-        'cookbook_version': 'v4.2.1',
+        'cookbook_version': args['cookbook_version'],
         'name': args['name'],
         'rabbit_ip': skylab_vips,
         'rabbit_password': 'secrete',

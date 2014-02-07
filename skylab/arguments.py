@@ -139,6 +139,11 @@ def args():
                      help='Disable the default Private Network',
                      action='store_true',
                      default=False)
+    bld.add_argument('--cookbook-version',
+                     metavar='',
+                     help=('Cookbook Version for deployment'
+                           ' DEFAULT: %(default)s'),
+                     default='master')
     bld.add_argument('-n',
                      '--name',
                      metavar='',
